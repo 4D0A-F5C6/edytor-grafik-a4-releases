@@ -1,0 +1,29 @@
+# Repozytorium git w tym katalogu obsługuje WYŁĄCZNIE wydania na GitHub Releases.
+# Kod źródłowy zostaje na tym komputerze i nie może trafić do publicznego repo.
+
+# Wymienione wprost, żeby intencja była czytelna przy czytaniu tego pliku:
+src/
+node_modules/
+dist/
+out/
+
+# Reszta katalogu projektu — też źródła i pliki robocze:
+build/
+tools/
+.claude/
+.vite/
+*.ts
+*.mts
+*.tsbuildinfo
+*.log
+README.md
+package.json
+package-lock.json
+tsconfig*.json
+electron-builder.yml
+
+# Zabezpieczenie na przyszłość: cokolwiek jeszcze pojawi się w katalogu
+# projektu, domyślnie nie trafia do repozytorium. Nowy plik trzeba dopuścić
+# świadomie, wpisem `!nazwa` poniżej — przypadkiem nic nie wycieknie.
+*
+!.gitignore
